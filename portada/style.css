@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+}
+
+.contenedor-grid {
+  height: 100vw;
+  width: 90vw;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+  -ms-grid-rows: 24vw 60vw 12vw;
+      grid-template-rows: 24vw 60vw 12vw;
+}
+
+.contenedor-grid .img-principal {
+  position: absolute;
+  z-index: -1;
+  height: 102vw;
+  width: 90vw;
+}
+
+.contenedor-grid .contenedor-titulo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 1/1/2/7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: #fff;
+  padding-top: 1vw;
+}
+
+.contenedor-grid .contenedor-titulo h3 {
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
+}
+
+.contenedor-grid .contenedor-titulo h3 span {
+  font-weight: bold;
+  font-size: 4vw;
+}
+
+.contenedor-grid .contenedor-titulo .titulo {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, red), color-stop(30%, black));
+  background: linear-gradient(to right, red 30%, black 30%);
+  font-size: 16vw;
+  border-radius: 10px;
+  margin: 1vw;
+}
+
+.contenedor-grid .aside1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2/1/3/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 1fr 2fr 2fr;
+      grid-template-rows: 2fr 1fr 2fr 2fr;
+  padding-left: 1vw;
+}
+
+.contenedor-grid .aside1 .games {
+  text-transform: uppercase;
+}
+
+.contenedor-grid .aside1 .games h3 {
+  font-size: 3vw;
+}
+
+.contenedor-grid .aside1 .games p {
+  font-size: 2vw;
+}
+
+.contenedor-grid .aside1 .games span {
+  font-size: 11vw;
+  font-style: italic;
+}
+
+.contenedor-grid .aside1 .reviewed {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  grid-area: 3/1/4/1;
+  font-size: 2vw;
+}
+
+.contenedor-grid .aside1 .contenedor-battlefield {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  grid-area: 4/1/5/1;
+  text-transform: uppercase;
+}
+
+.contenedor-grid .aside1 .contenedor-battlefield h3 {
+  background-color: red;
+  width: 10vw;
+  font-size: 1vw;
+}
+
+.contenedor-grid .aside1 .contenedor-battlefield h2 {
+  font-size: 3vw;
+}
+
+.contenedor-grid .aside1 .contenedor-battlefield .caja-battlefield {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 2vw;
+}
+
+.contenedor-grid .aside1 .contenedor-battlefield .caja-battlefield img {
+  height: 8vw;
+  width: 8vw;
+  border-radius: 50px;
+}
+
+.contenedor-grid .aside2 {
+  position: relative;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 2/4/3/5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 1fr 1fr;
+      grid-template-rows: 2fr 1fr 1fr;
+  margin-right: 2vw;
+}
+
+.contenedor-grid .aside2 .cruz-derecha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  top: 20vw;
+}
+
+.contenedor-grid .aside2 .promo-rift img {
+  height: auto;
+  width: 20vw;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1/1/1/1;
+}
+
+.contenedor-grid .aside2 .previewed {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  grid-area: 2/1/3/1;
+  text-align: end;
+  text-transform: uppercase;
+  font-size: 2vw;
+}
+
+.contenedor-grid .aside2 .previewed li {
+  padding-bottom: 1vw;
+}
+
+.contenedor-grid .aside2 .future {
+  text-align: end;
+  font-size: 2vw;
+  text-transform: capitalize;
+}
+
+.contenedor-grid .exlusive-access {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 1/2/3/4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10fr 1fr;
+      grid-template-rows: 10fr 1fr;
+}
+
+.contenedor-grid .exlusive-access h3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: -1;
+  grid-area: 2/2/2/1;
+  color: #fff;
+  background-color: red;
+  text-align: center;
+  text-transform: uppercase;
+  width: 20vw;
+  margin-bottom: 1vw;
+  font-size: 2vw;
+  line-height: 6vw;
+}
+
+.contenedor-grid .juego {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 3/1/4/5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 4fr 1fr;
+      grid-template-rows: 4fr 1fr;
+}
+
+.contenedor-grid .juego .nombre-juego {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 1/1/3/4;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12vw;
+  margin-left: 1vw;
+  border-top: 1px solid gold;
+  border-bottom: 1px solid gold;
+}
+
+.contenedor-grid .juego .numero-juego {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 1/4/2/5;
+  color: rgba(255, 229, 80, 0.527);
+  font-size: 16vw;
+  padding-right: 5vw;
+  line-height: 0;
+  margin-top: 6vw;
+}
+
+.contenedor-grid .halago {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 4/1/5/5;
+  text-align: center;
+  font-size: 3vw;
+  padding-top: 1vw;
+}
+/*# sourceMappingURL=style.css.map */

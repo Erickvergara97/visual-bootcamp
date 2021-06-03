@@ -1,0 +1,61 @@
+h1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.calculadora {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100px)[4];
+      grid-template-columns: repeat(4, 100px);
+  -ms-grid-rows: (100px)[6];
+      grid-template-rows: repeat(6, 100px);
+}
+
+.calculadora button {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+
+.calculadora .result {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  text-align: end;
+  font-size: 50px;
+  padding: 50px;
+  background-color: black;
+  color: white;
+}
+
+.calculadora .result::-webkit-input-placeholder {
+  color: white;
+}
+
+.calculadora .result:-ms-input-placeholder {
+  color: white;
+}
+
+.calculadora .result::-ms-input-placeholder {
+  color: white;
+}
+
+.calculadora .result::placeholder {
+  color: white;
+}
+
+.calculadora .igual {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 5/4/7/5;
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */

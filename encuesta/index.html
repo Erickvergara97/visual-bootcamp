@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" local="Formula1-Regular.ttf">
+    <title>Formulario Formula 1</title>
+</head>
+<body>
+    <img src="https://www.purosautos.com/wp-content/uploads/2021/03/2020-formula-1-calendar-f1-.jpg" alt="" class="imagen-fondo">
+    <div class="grid-general">
+        <header>
+            <img src="https://www.actualidadmotor.com/wp-content/uploads/2020/01/f1-logo.png" alt="" class="formula1">
+        </header>
+        
+        <div class="contenedor">
+            <h1>formula 1</h1>
+            <form action="">
+                <div class="contenedor-pregunta">
+                    <label for="nombre" required aria-required="nombre">Nombre: </label>
+                    <input type="text" placeholder="John" class="text" required aria-required="true">
+                </div>
+
+                <div class="contenedor-pregunta">
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" placeholder="Doe" class="text" required aria-required="true">
+                </div>
+
+                <div class="contenedor-pregunta">
+                    <label for="piloto">Piloto favorito:</label>
+                    <select name="" id="" required aria-required="true">
+                        <option value="" selected disabled>Escoja una opción</option>
+                        <option value="lewis">Lewis Hamilton</option>
+                        <option value="valteri">Valteri Bottas</option>
+                        <option value="max">Max Verstappen</option>
+                        <option value="checo">Checo Peres</option>
+                        <option value="charles">Charles Leclerc</option>
+                        <option value="carlos">Carlos Sainz</option>
+                        <option value="lando">Lando Norris</option>
+                        <option value="daniel">Daniel Ricciardo</option>
+                        <option value="fernando">Fernando Alonso</option>
+                        <option value="esteban">Esteban Ocon</option>
+                        <option value="sebastian">Sebastian Vettel</option>
+                        <option value="lance">Lance Stroll</option>
+                        <option value="pierre">Pierre Gasly</option>
+                        <option value="yuki">Yuki Tsunoda</option>
+                        <option value="kimmi">Kimmi Raikkonen</option>
+                        <option value="antonio">Antonio Giovinazzi</option>
+                        <option value="mick">Mick Schumacher</option>
+                        <option value="nikita">Nikita Mazepin</option>
+                        <option value="george">George Russell</option>
+                        <option value="nicholas">Nicholas Latifi</option>
+                    </select>
+                </div>
+
+                <div class="contenedor-pregunta">
+                    <label for="escuderia">Escudería favorita: </label>
+                    <select name="" id="">
+                        <option value="opcion" selected disabled>Escoja una opción</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="red bull">Red Bull Racing</option>
+                        <option value="ferrari">Ferrari</option>
+                        <option value="mclaren">Mclaren</option>
+                        <option value="alpine">Alpine</option>
+                        <option value="aston martin">Aston Martin</option>
+                        <option value="alpha tauri">Alpha Tauri</option>
+                        <option value="alpha romeo">Alpha Romeo</option>
+                        <option value="haas">Haas</option>
+                        <option value="williams">Williams</option>
+                    </select>
+                </div>
+
+                <div class="contenedor-pregunta">
+                    <label for="formula1">¿Te gusta la Formula 1?</label>
+                    <label for="Sí">
+                        Sí
+                        <input type="radio" value="Sí" id="Sí" name="tegusta">
+                    </label>
+                    <label for="No">
+                        No
+                        <input type="radio" value="No" id="No" name="tegusta">
+                    </label>
+                </div>
+
+                <div class="contenedor-pregunta">
+                    <label for="conocimientoformula1">¿Sabes de Formula 1?</label>
+                    <label for="Sí">
+                        Sí
+                        <input type="radio" value="Sí" id="Sí" name="sabes">
+                    </label>
+                    <label for="No">
+                        No
+                        <input type="radio" value="No" id="No" name="sabes">
+                    </label>
+                </div>
+
+
+                <input type="submit" class="boton">
+                
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

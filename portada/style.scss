@@ -1,0 +1,210 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+};
+
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    
+};
+
+.contenedor-grid{
+    height: 100vw;
+    width: 90vw;
+    position: relative;
+
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 24vw 60vw 12vw;
+
+    .img-principal{
+        position:absolute;
+        z-index: -1;
+        height: 102vw;
+        width: 90vw;
+    };
+    
+
+
+    .contenedor-titulo{
+        grid-area: 1/1/2/7;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        color: #fff;
+        padding-top: 1vw;
+
+        h3{
+            text-transform: uppercase;
+            font-size: 3vw;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight:normal;
+            span{
+                font-weight: bold;
+                font-size: 4vw;
+            };
+        };
+        
+        
+        
+        .titulo{
+            background: linear-gradient( to right, red 30%, black 30%);
+            font-size: 16vw;
+            border-radius: 10px;
+            margin: 1vw;
+        };
+    };
+
+    
+    .aside1{
+        grid-area: 2/1/3/2;
+        display: grid;
+        grid-template-rows: 2fr 1fr 2fr 2fr;
+        padding-left: 1vw;
+        .games{
+            text-transform: uppercase;
+            h3{
+                font-size: 3vw;
+            }
+            p{
+                font-size: 2vw;
+            }
+            span{
+                font-size: 11vw;
+                font-style: italic
+            };
+        };
+    
+        .reviewed{
+            grid-area: 3/1/4/1;
+            font-size: 2vw;
+        };
+
+        .contenedor-battlefield{
+            grid-area: 4/1/5/1;
+            text-transform: uppercase;
+            h3{
+                background-color: red;
+                width: 10vw;
+                font-size: 1vw;
+            };
+            
+            
+            h2{
+                font-size: 3vw;
+            };
+            .caja-battlefield{
+                display: flex;
+                flex-direction: row;
+                font-size: 2vw;
+                img{
+                    height: 8vw;
+                    width: 8vw;
+                    border-radius: 50px;
+                };
+            };
+
+        };
+    };
+
+    .aside2{
+        position: relative;
+        grid-area: 2/4/3/5;
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr;
+        margin-right: 2vw;
+        .cruz-derecha{
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            right: 0;
+            top: 20vw;
+        };
+        
+        .promo-rift{
+            img{
+                height: auto;
+                width: 20vw;
+                grid-area: 1/1/1/1;
+            };
+        };
+
+        .previewed{
+            grid-area: 2/1/3/1;
+            text-align: end;
+            text-transform: uppercase;
+            font-size: 2vw;
+
+            li{
+                padding-bottom: 1vw;
+            };
+        };
+
+        .future{
+            text-align: end;
+            font-size: 2vw;
+            text-transform: capitalize;
+        };
+    };
+
+    .exlusive-access{
+        grid-area: 1/2/3/4;
+        display: grid;
+        grid-template-rows: 10fr 1fr;
+        h3{
+            grid-area: 2/2/2/1;
+            color: #fff;
+            background-color: red;
+            text-align: center;
+            text-transform: uppercase;
+            width: 20vw;
+            margin-bottom: 1vw;
+            font-size: 2vw;
+            line-height: 6vw
+        };
+    };
+
+    .juego{
+        grid-area: 3/1/4/5;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 4fr 1fr;
+        .nombre-juego{
+            grid-area: 1/1/3/4;
+            color: #fff;
+            display: block;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 12vw;
+            margin-left: 1vw;
+            
+            border-top: 1px solid gold;
+            border-bottom: 1px solid gold;
+        
+        };
+        .numero-juego{
+            grid-area: 1/4/2/5;
+            color: rgba(255, 229, 80, 0.527);
+            font-size: 16vw;
+            padding-right: 5vw;
+            line-height: 0;
+            margin-top: 6vw;
+        };
+    };
+    
+        .halago{
+            grid-area: 4/1/5/5;
+            text-align: center;
+            font-size: 3vw;
+            padding-top: 1vw;
+        }; 
+    
+};

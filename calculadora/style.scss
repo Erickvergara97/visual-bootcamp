@@ -1,0 +1,39 @@
+h1{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+};
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(6,100px);
+    
+    
+    button{
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        font-size: 30px;
+    }
+    
+    .result{
+        grid-column: 1/5;
+        text-align: end;
+        font-size: 50px;
+        padding: 50px;
+        background-color: black;
+        color: white;
+    }
+    .result::placeholder{
+        color: white;
+    }
+
+
+    .igual{
+        grid-area: 5/4/7/5;
+        background-color: blue;
+    }
+}
