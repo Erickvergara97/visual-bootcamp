@@ -1,6 +1,4 @@
-h1 {
-  margin: 0;
-  padding: 0;
+* {
   list-style: none;
   text-decoration: none;
   border: none;
@@ -16,7 +14,21 @@ h1 {
       grid-template-rows: repeat(6, 100px);
 }
 
+.calculadora .cuadro-gris {
+  background: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 102, 255, 0.993);
+}
+
+.calculadora .cuadro-gris:active {
+  background-color: rgba(0, 0, 0, 0.664);
+}
+
+.calculadora button:active {
+  background-color: rgba(0, 0, 0, 0.87);
+}
+
 .calculadora button {
+  border: 1px rgba(255, 255, 255, 0.37) solid;
   cursor: pointer;
   background-color: black;
   color: white;
@@ -56,6 +68,10 @@ h1 {
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-area: 5/4/7/5;
-  background-color: blue;
+  background-color: rgba(0, 102, 255, 0.993);
+}
+
+.calculadora .igual:active {
+  background-color: #0046af;
 }
 /*# sourceMappingURL=style.css.map */
