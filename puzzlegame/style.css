@@ -25,16 +25,19 @@ body img {
 .puzzle .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (100px)[4];
-  -ms-grid-columns: (100px)[4];
-      grid-template: repeat(4, 100px)/repeat(4, 100px);
+  grid-template: [x1] 100px [x2] 100px [x3] 100px [x4] 100px/[y1] 100px [y2] 100px [y3] 100px [y4] 100px;
 }
 
 .puzzle .grid button {
+  border: 2px solid gray;
   font-size: 25px;
   font-weight: bold;
   color: white;
   background-color: blueviolet;
+}
+
+.puzzle .grid .botonVacio {
+  background-color: purple;
 }
 
 .puzzle .footer {
