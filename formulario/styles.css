@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.body {
+  background-color: gray;
+  color: white;
+}
+
+.main-form {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  margin: 50px auto;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  border-radius: 20px;
+  padding: 50px 0;
+}
+
+.main-form .section1 {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-form .section1 input {
+  padding: 10px;
+}
+
+.main-form .section2 {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-form .section2 button {
+  text-transform: capitalize;
+}
+
+.main-form input {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.main-form h1 {
+  text-transform: uppercase;
+}
+
+.main-form .aviso {
+  color: white;
+  font-weight: bold;
+}
+/*# sourceMappingURL=styles.css.map */
